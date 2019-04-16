@@ -52,15 +52,15 @@ set(CMAKE_CXX_STANDARD 14)
 set(SRC_MAIN_FILES
         src/main/cpp/Main.cpp
         src/main/cpp/ExpandedTemplates.cpp
-        )
+        src/main/cpp/HealthTracker.cpp src/main/cpp/HealthTracker.h)
 set(SRC_DEMO_FILES
         src/main/cpp/Demo.cpp
         src/main/cpp/ExpandedTemplates.cpp
-        )
+        src/main/cpp/HealthTracker.cpp src/main/cpp/HealthTracker.h)
 set(SRC_TEST_FILES
         src/test/cpp/UnitTestRunner.cpp
         src/main/cpp/ExpandedTemplates.cpp
-        )
+        src/main/cpp/HealthTracker.cpp src/main/cpp/HealthTracker.h)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/out)
 

@@ -9,8 +9,10 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include "HealthTracker.h"
 
 int main(int argc, char* argv[]) {
     std::cout << "Hello, Demo!" << std::endl;
+
     return EXIT_SUCCESS;
 }
