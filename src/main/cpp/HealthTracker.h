@@ -4,7 +4,7 @@
  *
  * @file      HealthTrack.h
  * @authors   Jim Daehn <jdaehn@missouristate.edu>
- *            TODO: Add your name and email address on this line
+ *            Dalton McCart <mccart42@live.missouristate.edu>
  */
 
 #ifndef LAB09_HEALTHTRACKER_H
@@ -14,18 +14,45 @@
 
 class HealthTracker {
 private:
-    // TODO: Add attributes
+    double weight;
+    double fatPercent;
 
 public:
-    // TODO: Add initializing constructor, accessors and mutators
+      /**
+     * Initializing constructor.
+     * @param theWeight
+     * @param theFatPercent
+     */
+    HealthTracker(double theWeight, double theFatPercent);
+
+    /**
+     * Accessor for weight,
+     * @return double, reads weight provided.
+     */
+    double getWeight() const;
+
+    /**
+     * Mutator for weight,
+     * @param theWeight
+     */
+    void setWeight (double theWeight);
+
+
+    /**
+     * Accessor for fatPercent,
+     * @return double, reads fatPercent provided.
+     */
+    double getFatPercent () const;
+
+    /**
+     * Mutator for fatPercent.
+     * @param theFatPercent
+     */
+    void setFatPercent (double theFatPercent);
+
 
     friend std::ostream& operator<<(std::ostream& os, const HealthTracker& healthTracker);
 };
 
-std::ostream& operator<<(std::ostream& os, const HealthTracker& healthTracker) {
-    // TODO: Insert health tracker data into os so that it prints out the following format:
-    // Weight: 219.5, Fat Percent: 25.9%
-    return os;
-}
 
 #endif //LAB09_HEALTHTRACKER_H
